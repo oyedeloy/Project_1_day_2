@@ -7,7 +7,7 @@ pipeline {
             AWS_SECRET_ACCESS_KEY = credentials('SECRET_KEY')
         }
        steps {
-          sh 'ansible -m ping -i inventory all_nodes'        
+          sh 'ansible -m ping -i inventory redis_nodes'        
         }
       }
    }
