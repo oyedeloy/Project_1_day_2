@@ -7,7 +7,7 @@ pipeline {
             AWS_SECRET_ACCESS_KEY = credentials('SECRET_KEY')
         }
        steps {
-          sh 'ansible -m ping -i inventory redis_nodes'        
+          sh 'ansible -m yum -a "name=httpd state=installed" -i inventory Monitoring -b'        
         }
       }
    }
