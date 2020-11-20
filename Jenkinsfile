@@ -9,6 +9,7 @@ pipeline {
        steps {
           ansiblePlaybook(
                     credentialsId: 'devops-key2.pem',
+                    disableHostKeyChecking: true,
                     inventory: 'inventory',
                     playbook: 'ping.yml'
                 )        
