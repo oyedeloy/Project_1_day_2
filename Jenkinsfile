@@ -7,12 +7,7 @@ pipeline {
             AWS_SECRET_ACCESS_KEY = credentials('SECRET_KEY')
         }
        steps {
-          ansiblePlaybook(
-                    credentialsId: 'devops-key2.pem',
-                    disableHostKeyChecking: true,
-                    inventory: 'inventory',
-                    playbook: 'ping.yml'
-                )        
+          sh 'ansible-playbook -i inventory ping.yml'
         }
       }
    }
