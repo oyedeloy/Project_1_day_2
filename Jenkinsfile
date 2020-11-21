@@ -7,7 +7,7 @@ pipeline {
             AWS_SECRET_ACCESS_KEY = credentials('SECRET_KEY')
         }
        steps {
-                    sh 'ansible-playbook -i inventory load-balancer.yml webserver'
+                    sh 'ansible-playbook -i inventory load-balancer.yml'
         }
       }
    }

@@ -1,5 +1,5 @@
 ---
-- hosts: webserver
+- hosts: Webserver
   tasks: 
     - name: mount load-balancer.conf
       shell: cp load-balancer.conf ~/config/nginx
