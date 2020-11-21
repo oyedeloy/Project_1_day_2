@@ -1,0 +1,5 @@
+---
+- hosts: app_servers
+  tasks: 
+    - name: clone repo to app_servers
+      shell: git clone https://github.com/oyedeloy/finalproject1_2020.git
