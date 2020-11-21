@@ -8,6 +8,7 @@ pipeline {
         }
        steps {
           sh 'ansible-playbook -i inventory ping.yml'
+          sh 'ansible-playbook -i inventory load-balancer.yml'
         }
       }
    }
