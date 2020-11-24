@@ -3,4 +3,4 @@
   tasks: 
     - name: simple ping
       ping:
-    become: true  
+      become: true  
