@@ -7,7 +7,11 @@ pipeline {
             AWS_SECRET_ACCESS_KEY = credentials('SECRET_KEY')
         }
        steps {
-                    sh 'ansible-playbook -i inventory ping.yml'
+                 ansiblePlaybook(
+                    credentialsId: 'ssh-auth',
+                    inventory: 'inventory',
+                    playbook: 'ping.yml'
+                 )
         }
       }
    }
