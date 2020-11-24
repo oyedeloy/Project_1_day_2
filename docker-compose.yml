@@ -1,0 +1,28 @@
+services:
+  node-exporter:
+      image: prom/node-exporter
+      container_name: node_exporter_1
+      ports:
+        - 9100:9100
+      restart: always
+
+  redis:
+      image: redis:latest
+      container_name: redis
+      volumes:
+          - ./config/redis:/etc/redis
+          - ./config/data:/data
+      command: [ "redis-server", "/etc/redis/redis.conf" ]
+      ports:
+        - 6379:6379
+      restart: always
+
+  sentinel:
+      image: redis:latest
+      container_name: sentinel
+      volumes:
+          - ./config/sentinel:/etc/redis
+      command: [ "redis-sentinel", "/etc/redis/sentinel.conf" ]
+      ports:
+        - 26379:26379
+      restart: always

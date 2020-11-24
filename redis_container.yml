@@ -1,0 +1,12 @@
+---
+- hosts: redis_nodes
+  tasks:
+    - name: copy docker-compose
+      copy: 
+        src: /home/ec2-user/docker-compose.yml
+        dest: /home/ec2-user
+    - name: build container
+      shell: docker-compose up -d    
+    
+
+      become: true

@@ -1,0 +1,13 @@
+---
+- hosts: redis1
+  tasks:
+    - name: create config folders
+      shell: mkdir config
+    - name: create redis folder
+      shell: mkdir config/redis
+    - name: create sentinel folder
+      shell: mkdir config/sentinel 
+    - name: create data folder
+      shell: mkdir config/data 
+
+      become: true
