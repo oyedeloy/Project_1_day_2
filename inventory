@@ -1,48 +1,48 @@
 [Infra_toolbox]
-10.7.3.155 ansible_user=ec2-user
+10.7.3.174 ansible_user=ec2-user
 
 [webserver]
-10.7.1.25 ansible_user=ec2-user
+10.7.1.197 ansible_user=ec2-user
 
 [app_server1]
-10.7.2.220 ansible_user=ec2-user
+10.7.2.166 ansible_user=ec2-user
 
 [app_server2]
-10.7.3.68 ansible_user=ec2-user
+10.7.3.21 ansible_user=ec2-user
 
 [redis1]
-10.7.2.143
+10.7.2.173
 
 [redis2]
-10.7.2.111
+10.7.2.195
 
 [redis3]
-10.7.3.180
+10.7.3.102
 
 [redis4]
-10.7.3.124
+10.7.3.174
 
 [Monitoring]
-10.7.1.156 ansible_user=ec2-user
+10.7.1.244 ansible_user=ec2-user
 
 [app_servers]
-10.7.2.64 ansible_user=ec2-user
-10.7.3.196 ansible_user=ec2-user
+10.7.2.166 ansible_user=ec2-user
+10.7.3.21 ansible_user=ec2-user
 
 [redis_nodes]
-110.7.2.143
-10.7.2.111
-10.7.3.180
-10.7.3.124
+110.7.2.173
+10.7.2.195
+10.7.3.102
+10.7.3.174
 
 
 [all_nodes]
-10.7.1.155 ansible_user=ec2-user
-10.7.3.124 ansible_user=ec2-user
-10.7.1.156 ansible_user=ec2-user
-10.7.2.220 ansible_user=ec2-user
-10.7.3.68 ansible_user=ec2-user
-10.7.2.143
-10.7.2.111
-10.7.3.180
-10.7.3.124
+Infra_toolbox_ip = 10.7.3.174 ansible_user=ec2-user
+Monitoring_ip = 10.7.1.244 ansible_user=ec2-user
+Webserver_ip = 10.7.1.197 ansible_user=ec2-user
+app_server1_ip = 10.7.2.166 ansible_user=ec2-user
+app_server2_ip = 10.7.3.21 ansible_user=ec2-user
+redis1_ip = 10.7.2.173 
+redis2_ip = 10.7.2.195
+redis3_ip = 10.7.3.102
+redis4_ip = 10.7.3.174
