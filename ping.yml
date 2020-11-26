@@ -1,5 +1,5 @@
 ---
-- hosts: all_nodes
+- hosts: webserver
   tasks: 
     - name: simple ping
       ping:
