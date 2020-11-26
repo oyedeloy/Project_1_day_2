@@ -11,4 +11,5 @@
         command: [ "redis-server", "/etc/redis/redis.conf" ]
         ports:
         - 6379:6379
-        restart: always
+        state: started
+        restart: yes
