@@ -10,7 +10,7 @@ pipeline {
                  ansiblePlaybook(
                     credentialsId: 'ssh_auth',
                     inventory: 'inventory',
-                    playbook: 'ping.yml'
+                    playbook: 'redis-docker.yml'
                  )
         }
       }
