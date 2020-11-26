@@ -1,0 +1,14 @@
+---
+- hosts: redis_server
+  tasks: 
+    - name: Create a data container
+      docker_container:
+        name: redis
+        image: redis:latest
+        volumes:
+          - ./config/redis:/etc/redis
+          - ./config/data:/data
+        command: [ "redis-server", "/etc/redis/redis.conf" ]
+        ports:
+        - 6379:6379
+      restart: always
