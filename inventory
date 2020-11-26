@@ -1,8 +1,8 @@
 [Infra_toolbox]
-10.7.3.124 ansible_user=ec2-user
+10.7.3.155 ansible_user=ec2-user
 
 [webserver]
-10.7.1.159 ansible_user=ec2-user
+10.7.1.25 ansible_user=ec2-user
 
 [app_server1]
 10.7.2.220 ansible_user=ec2-user
@@ -37,7 +37,7 @@
 
 
 [all_nodes]
-10.7.1.159 ansible_user=ec2-user
+10.7.1.155 ansible_user=ec2-user
 10.7.3.124 ansible_user=ec2-user
 10.7.1.156 ansible_user=ec2-user
 10.7.2.220 ansible_user=ec2-user
