@@ -1,5 +1,5 @@
 ---
-- hosts: redis_server
+- hosts: redis_nodes
   tasks: 
     - name: Create a data container
       docker_container:
