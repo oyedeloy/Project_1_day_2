@@ -3,8 +3,8 @@
   tasks: 
     - name: Create a data container
       docker_container:
-        name: mydata
-        image: busybox
+        name: redis
+        image: redis:latest
         volumes:
            - ./config/redis:/etc/redis
            - ./config/data:/data
