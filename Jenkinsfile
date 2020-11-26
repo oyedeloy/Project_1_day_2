@@ -8,7 +8,7 @@ pipeline {
         }
        steps {
                  ansiblePlaybook(
-                    credentialsId: 'ssh-auth',
+                    credentialsId: 'ssh_auth',
                     inventory: 'inventory',
                     playbook: 'ping.yml'
                  )
