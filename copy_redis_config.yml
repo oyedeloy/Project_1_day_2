@@ -3,11 +3,11 @@
   tasks:
     - name: copy redis1
       copy: 
-        src: redis-sentinel/redis-sentinel-1/redis/redis.conf
+        src: redis-sentinel/redis-sentinel_1/redis.conf
         dest: /home/ec2-user/config/redis
     - name: copy sentinel1
       copy: 
-        src: redis-sentinel/redis-sentinel-1/sentinel/sentinel.conf
+        src: redis-sentinel/redis-sentinel_1/sentinel.conf
         dest: /home/ec2-user/config/sentinel
     
 
@@ -17,11 +17,11 @@
   tasks:
     - name: copy redis2
       copy: 
-        src: redis-sentinel/redis-sentinel-2/redis/redis.conf
+        src: redis-sentinel/redis-sentinel_2/redis.conf
         dest: /home/ec2-user/config/redis
     - name: copy sentinel2
       copy: 
-        src: redis-sentinel/redis-sentinel-2/sentinel/sentinel.conf
+        src: redis-sentinel/redis-sentinel_2/sentinel.conf
         dest: /home/ec2-user/config/sentinel
     
 
@@ -32,11 +32,11 @@
   tasks:
     - name: copy redis3
       copy: 
-        src: redis-sentinel/redis-sentinel-3/redis/redis.conf
+        src: redis-sentinel/redis-sentinel_3/redis.conf
         dest: /home/ec2-user/config/redis
     - name: copy sentinel1
       copy: 
-        src: redis-sentinel/redis-sentinel-3/sentinel/sentinel.conf
+        src: redis-sentinel/redis-sentinel_3/sentinel.conf
         dest: /home/ec2-user/config/sentinel
     
 
@@ -46,11 +46,11 @@
   tasks:
     - name: copy redis4
       copy: 
-        src: redis-sentinel/redis-sentinel-4/redis/redis.conf
+        src: redis-sentinel/redis-sentinel_4/redis.conf
         dest: /home/ec2-user/config/redis
     - name: copy sentinel2
       copy: 
-        src: redis-sentinel/redis-sentinel-4/sentinel/sentinel.conf
+        src: redis-sentinel/redis-sentinel_4/sentinel.conf
         dest: /home/ec2-user/config/sentinel
     
 
