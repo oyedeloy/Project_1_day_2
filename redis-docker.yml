@@ -18,7 +18,7 @@
         image: redis:latest        
         volumes:
            - ./config/sentinel:/etc/redis           
-        command: [ "redis-sentinel", "/etc/redis/redis.conf" ]
+        command: [ "redis-sentinel", "/etc/redis/sentinel.conf" ]
         ports:
         - 26379:26379
         
