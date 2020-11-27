@@ -4,5 +4,5 @@
     - name: clone repo to app_server
       git: 
        repo: git@github.com:oyedeloy/finalproject1_2020.git
-       dest: /home/ec2-user/
+       dest: /home/ec2-user/config
       become: true
