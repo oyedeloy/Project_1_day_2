@@ -11,4 +11,14 @@
         command: [ "redis-server", "/etc/redis/redis.conf" ]
         ports:
         - 6379:6379
+    
+    - name: Create sentinel
+      docker_container:
+        name: sentinel
+        image: redis:latest        
+        volumes:
+           - ./config/sentinel:/etc/redis           
+        command: [ "redis-sentinel", "/etc/redis/redis.conf" ]
+        ports:
+        - 26379:26379
         
