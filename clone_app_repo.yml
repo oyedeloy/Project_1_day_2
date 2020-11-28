@@ -15,5 +15,4 @@
         name: voting
     - name: build container
       shell: docker run -d -p 80:80 -e REDIS=10.7.2.110 -e REDIS_PORT=6379 -e REDIS_PWD=admin --name voting_app voting
-      staus: running
       
