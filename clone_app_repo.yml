@@ -13,5 +13,18 @@
       docker_image:
         path: /home/ec2-user/config
         name: voting
+
+    - name: build container
+      docker_container:
+        name: voting_app
+        image: voting
+        state: started
+        restart: yes       
+        ports:
+          - "80:80"         
+        env:
+          - REDIS_PASSWORD: admin
+          - REDIS: 10.7.2.110
+          - REDIS_PORT: 6379
     
       
