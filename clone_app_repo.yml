@@ -7,4 +7,9 @@
        dest: /home/ec2-user/config
        update: yes
       become: true
-    
+
+    - name: build docker image
+      docker_image:
+        path: /home/ec2-user/config
+        name: voting
+        
