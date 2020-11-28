@@ -7,7 +7,6 @@
        dest: /home/ec2-user/config
        update: yes
        become: yes   
-    
 
     - name: build docker image
       docker_image:
