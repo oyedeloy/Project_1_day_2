@@ -23,7 +23,7 @@
         ports:
           - "80:80"         
         env:
-           REDIS_PASSWORD: "admin"
+           REDIS_PWD: "admin"
            REDIS: "10.7.2.110"
            REDIS_PORT: "6379"
     

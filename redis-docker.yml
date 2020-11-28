@@ -11,6 +11,8 @@
         command: [ "redis-server", "/etc/redis/redis.conf" ]
         ports:
         - 6379:6379
+        state: started
+        restart: yes
     
     - name: Create sentinel
       docker_container:
@@ -21,4 +23,6 @@
         command: [ "redis-sentinel", "/etc/redis/sentinel.conf" ]
         ports:
         - 26379:26379
+        state: started
+        restart: yes
         
