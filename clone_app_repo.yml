@@ -5,10 +5,6 @@
       git: 
        repo: https://github.com/oyedeloy/finalproject1_2020.git
        dest: /home/ec2-user/config
-      become: true
-    - name: sync repo with app_server
-      git: 
-       repo: https://github.com/oyedeloy/finalproject1_2020.git
-       dest: /home/ec2-user/config
        update: yes
       become: true
+    
