@@ -7,3 +7,5 @@
         image: nginx    
         ports:
           - 80:80
+        volumes:
+           - ./config/nginx:/etc/nginx/conf.d
