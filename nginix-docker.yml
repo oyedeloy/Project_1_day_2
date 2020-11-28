@@ -1,0 +1,9 @@
+---
+- hosts: webserver
+  tasks: 
+    - name: Create a data container
+      docker_container:
+        name: nginx_1
+        image: nginx    
+        ports:
+          - 80:80
