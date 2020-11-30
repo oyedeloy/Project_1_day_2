@@ -9,3 +9,18 @@
           - 80:80
         volumes:
            - ./config/nginx:/etc/nginx/conf.d
+        state: started
+        restart: yes
+
+    - name: upload load-balancer.conf
+      copy:
+    
+    - name: create node-exporter container
+      docker_container:
+        name: node-exporter
+        image: prom/node-exporter
+        ports:
+          - 9100:9100
+        restart: yes
+        
+      
