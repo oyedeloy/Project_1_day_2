@@ -1,6 +1,11 @@
 ---
 - hosts: Monitoring
   tasks:
+    - name: copy prometheus.yml
+      copy:
+       src: prometheus.yml
+       dest: /home/ec2-user/config/prometheus/
+    
     - name: create prometheus container
       docker_container:
         name: prometheus
@@ -29,7 +34,4 @@
         ports:
           - 9100:9100
 
-    - name: copy prometheus.yml
-      copy:
-       src: prometheus.yml
-       dest: /home/ec2-user/config/prometheus/
+    
