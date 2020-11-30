@@ -57,20 +57,20 @@ scrape_configs:
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
     static_configs:
-      - targets: ['10.7.2.195:9121']
+      - targets: ['10.7.2.195:9100']
 
   
   - job_name: 'Redis3 node-exporter'
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
     static_configs:
-      - targets: ['10.7.3.102:9121'] 
+      - targets: ['10.7.3.102:9100'] 
 
   - job_name: 'Redis4 node-exporter'
     # metrics_path defaults to '/metrics'
     # scheme defaults to 'http'.
     static_configs:
-      - targets: ['10.7.3.174:9121'] 
+      - targets: ['10.7.3.174:9100'] 
 
   - job_name: 'black-box'
     # metrics_path defaults to '/metrics'
