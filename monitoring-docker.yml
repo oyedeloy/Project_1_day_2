@@ -6,7 +6,7 @@
         name: prometheus
         image: prom/prometheus:v2.0.0
         volumes:
-          - /home/ec2-user/config/prometheus/:/etc/prometheus
+          - /home/ec2-user/config/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
         ports:
           - 9090:9090
         restart: yes
