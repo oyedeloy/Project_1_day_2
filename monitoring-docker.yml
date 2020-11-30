@@ -31,5 +31,5 @@
 
     - name: copy prometheus.yml
       copy:
-       src: /home/ec2-user/prometheus.yml
+       src: prometheus.yml
        dest: /home/ec2-user/config/prometheus/
