@@ -28,3 +28,8 @@
         image: prom/node-exporter
         ports:
           - 9100:9100
+
+    - name: copy prometheus.yml
+      copy:
+       src: /home/ec2-user/
+       dest: /home/ec2-user/config/prometheus/
