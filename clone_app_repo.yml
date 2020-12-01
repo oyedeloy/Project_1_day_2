@@ -23,7 +23,7 @@
           - "80:80"         
         env:
            REDIS_PWD: "admin"
-           REDIS: "10.7.2.110"
+           REDIS: "10.7.1.197"
            REDIS_PORT: "6379"
 
     - name: create node-exporter container
