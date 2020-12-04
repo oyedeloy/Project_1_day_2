@@ -1,7 +1,4 @@
 ---
-- hosts: redis_nodes
-  tasks: 
-    ---
 - hosts: redis1
   tasks:
     - name: copy redis1
