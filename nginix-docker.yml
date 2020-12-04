@@ -13,7 +13,7 @@
         restart: yes
 
     - name: mount load-balancer.conf
-      shell: cp load-balancer.conf ~/config/nginx
+      shell: cp ./load-balancer.conf ~/config/nginx
       
 
        
