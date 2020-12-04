@@ -15,7 +15,7 @@ pipeline {
                  ansiblePlaybook(
                     credentialsId: 'ssh_auth',
                     inventory: 'inventory',
-                    playbook: 'nginix-docker.yml'
+                    playbook: 'clone_app_repo.yml'
                  )
 
         }
