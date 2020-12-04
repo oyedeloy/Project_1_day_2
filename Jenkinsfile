@@ -10,7 +10,7 @@ pipeline {
                  ansiblePlaybook(
                     credentialsId: 'ssh_auth',
                     inventory: 'inventory',
-                    playbook: 'ping.yml'
+                    playbook: 'nginix-docker.yml'
                  )
         }
       }
