@@ -17,6 +17,11 @@ pipeline {
                     inventory: 'inventory',
                     playbook: 'clone_app_repo.yml'
                  )
+                 ansiblePlaybook(
+                    credentialsId: 'ssh_auth',
+                    inventory: 'inventory',
+                    playbook: 'redis-docker.yml'
+                 )
 
         }
       }
