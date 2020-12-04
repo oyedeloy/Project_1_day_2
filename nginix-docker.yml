@@ -14,8 +14,8 @@
 
     - name: mount load-balancer.conf
       copy: 
-        src: ~/load-balancer.conf
-        dest: ~/config/nginx
+        src: /home/ec2-user/load-balancer.conf
+        dest: /home/ec2-user/config/nginx
       become: yes
 
        
