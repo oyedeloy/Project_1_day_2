@@ -14,9 +14,9 @@
 
     - name: mount load-balancer.conf
       copy: 
-        src: /home/ec2-user/load-balancer.conf
+        src: ~/load-balancer.conf
         dest: ~/config/nginx
-      
+      become: yes
 
        
     - name: create node-exporter container
