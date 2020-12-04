@@ -11,7 +11,7 @@ pipeline {
                     credentialsId: 'ssh_auth',
                     inventory: 'inventory',
                     playbook: 'nginix-docker.yml'
-                 ),
+                 )
                  ansiblePlaybook(
                     credentialsId: 'ssh_auth',
                     inventory: 'inventory',
