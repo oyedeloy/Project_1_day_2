@@ -10,7 +10,7 @@ pipeline {
                  ansiblePlaybook(
                     credentialsId: 'ssh_auth',
                     inventory: 'inventory',
-                    playbook: 'load-balancer.yml'
+                    playbook: 'ping.yml'
                  )
         }
       }

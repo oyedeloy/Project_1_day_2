@@ -26,23 +26,23 @@
 10.7.1.39 ansible_user=ec2-user
 
 [app_servers]
-10.7.2.166 ansible_user=ec2-user
-10.7.3.21 ansible_user=ec2-user
+10.7.2.73 ansible_user=ec2-user
+10.7.3.156 ansible_user=ec2-user
 
 [redis_nodes]
-10.7.2.110
-10.7.2.195
-10.7.3.102
-10.7.3.174
+10.7.2.80
+10.7.2.152
+10.7.3.249
+10.7.3.71
 
 
 [all_nodes]
-10.7.3.174 ansible_user=ec2-user
-10.7.1.244 ansible_user=ec2-user
-10.7.1.197 ansible_user=ec2-user
-10.7.2.166 ansible_user=ec2-user
-10.7.3.21 ansible_user=ec2-user
-10.7.2.110 
-10.7.2.195
-10.7.3.102
-10.7.3.174
+10.7.1.97 ansible_user=ec2-user
+10.7.1.151 ansible_user=ec2-user
+10.7.2.73 ansible_user=ec2-user
+10.7.3.156 ansible_user=ec2-user
+100.7.2.80
+10.7.2.152
+10.7.3.249
+10.7.3.71
+10.7.1.39
