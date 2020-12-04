@@ -11,12 +11,11 @@ pipeline {
                     credentialsId: 'ssh_auth',
                     inventory: 'inventory',
                     playbook: 'nginix-docker.yml'
-                 )
-             }   
-      steps  {   ansiblePlaybook(
+                 ),
+                 ansiblePlaybook(
                     credentialsId: 'ssh_auth',
                     inventory: 'inventory',
-                    playbook: 'clone_app_repo.yml'
+                    playbook: 'nginix-docker.yml'
                  )
 
         }
