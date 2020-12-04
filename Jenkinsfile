@@ -1,18 +1,22 @@
 pipeline {
     agent any
     stages {
-        stage('apply') {
+        stage('export credentials') {
           environment {
             AWS_ACCESS_KEY_ID = credentials('ACCESS_KEY')
             AWS_SECRET_ACCESS_KEY = credentials('SECRET_KEY')
         }
-       steps {
-                 ansiblePlaybook(
+        stage('build webserver') {
+           steps {
+                   ansiblePlaybook(
                     credentialsId: 'ssh_auth',
                     inventory: 'inventory',
-                    playbook: 'clone_app_rep.yml'
+                    playbook: 'load-balancer.yml'
                  )
+              
+           }
         }
-      }
-   }
-}
+       
+       
+       
+       
