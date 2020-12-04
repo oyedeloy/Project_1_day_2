@@ -1,5 +1,5 @@
 ---
-- hosts: app_server1
+- hosts: app_servers
   tasks:
     - name: clone repo to app_server
       git: 
@@ -17,7 +17,7 @@
       docker_container:
         name: voting_app
         image: voting
-        state: started
+        state: absent
         restart: yes       
         ports:
           - "80:80"         
@@ -33,6 +33,7 @@
         ports:
           - 9100:9100
         restart: yes
+        state: absent
 
 
 
