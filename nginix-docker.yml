@@ -14,7 +14,7 @@
 
     - name: mount load-balancer.conf
       copy: 
-        src: ~/load-balancer.conf
+        src: /home/ec2-user/load-balancer.conf
         dest: ~/config/nginx
       
 
